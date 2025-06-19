@@ -3,19 +3,21 @@ export class Dato {
     _descripcion
     _tipo
 
-    constructor(valor, descripcion) {
+    constructor(valor, descripcion,tipo) {
         this.setValor(valor)
         this._descripcion = descripcion
-        this.tipo = tipo
+        this._tipo = tipo
     }
 
     setValor(value) {
-        let nuevo = parseInt(valor)
+        let nuevo = parseInt(value)
+        console.log(nuevo)
+
         //Nan = Not A Number
         if (!isNaN(nuevo)) {
-            this._valor = this.valor
+            this._valor = nuevo
         } else {
-            this._Valor = 0
+            this._valor = 0
         }
 
     }
